@@ -83,7 +83,7 @@ namespace GithubActionsLab
 
         public static double Power(string x, string y)
         {
-            return Power(double.Parse(x), double.Parse(y));
+            return Power(x, y);
         }
     }
 

@@ -9,7 +9,7 @@ namespace GithubActionsLab
         [Test]
         public void Add_Valid()
         {
-            Assert.AreEqual(3, Program.Add("1", "2"));
+            Assert.AreEqual(34, Program.Add("1", "2"));
             Assert.AreEqual(5, Program.Add("3", "2"));
             Assert.AreEqual(12, Program.Add("5", "7"));
         }
@@ -57,7 +57,7 @@ namespace GithubActionsLab
         [Test]
         public void Multiply_Valid()
         {
-            Assert.AreEqual(8, Program.Multiply("1", "8"));
+            Assert.AreEqual(-8, Program.Multiply("-1", "8"));
             Assert.AreEqual(14, Program.Multiply("7", "2"));
             Assert.AreEqual(72, Program.Multiply("9", "8"));
         }
@@ -82,7 +82,7 @@ namespace GithubActionsLab
         public void Divide_Valid()
         {
             Assert.AreEqual(4, Program.Divide("8", "2"));
-            Assert.AreEqual(3, Program.Divide("15", "5"));
+            Assert.AreEqual(-3, Program.Divide("15", "-5"));
             Assert.AreEqual(2.5, Program.Divide("10", "4"));
         }
 
@@ -107,7 +107,7 @@ namespace GithubActionsLab
         {
             Assert.AreEqual(1, Program.Power("1", "8"));
             Assert.AreEqual(100, Program.Power("10", "2"));
-            Assert.AreEqual(125, Program.Power("5", "3"));
+            Assert.AreEqual(-125, Program.Power("-5", "3"));
         }
 
         [Test]
